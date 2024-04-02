@@ -194,7 +194,7 @@ public class TestAutomationVynoteka {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div/button")).click();
+        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div/button")).click(); //Uzdaryti reklama
         try {
             TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
@@ -212,13 +212,7 @@ public class TestAutomationVynoteka {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/label/span[2]/span")).click(); //Pasirinkti pristatymo laika//
-        try {
-            TimeUnit.SECONDS.sleep(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/label/span[2]/span")).click(); //Pasirinkti pristatymo laika//
+        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]")).click(); //Pasirinkti pristatymo laika//
         try {
             TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
