@@ -190,7 +190,7 @@ public class TestAutomationVynoteka {
         //Naujienlaiskio langas
         _globalDriver.findElement(By.id("omnisend-form-63ff1f31b40d6530aba59a6d-close-action")).click(); //Uzdaryti naujienlaiski
         try {
-            TimeUnit.SECONDS.sleep(15);
+            TimeUnit.SECONDS.sleep(17);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -206,13 +206,13 @@ public class TestAutomationVynoteka {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/form/div/button")).click(); //Issaugoti pristatymo adresa//
+        //_globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/form/div/button")).click(); //Issaugoti pristatymo adresa//
         try {
             TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]")).click(); //Pasirinkti pristatymo laika//
+        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/div/div[2]/div[5]/div[9]/label/span[2]/span")).click(); //Pasirinkti pristatymo laika//
         try {
             TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
