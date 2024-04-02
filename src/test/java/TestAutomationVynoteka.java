@@ -139,7 +139,9 @@ public class TestAutomationVynoteka {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
         //Tikrinama, ar veikia paieska ir randama suvesta preke//
+
         _globalDriver.findElement(By.xpath("/html/body/div[2]/div[1]/header/div[3]/div/div/div[1]/div/div[1]/div/nav/div[1]/div/button/span")).click();
         _globalDriver.findElement(By.xpath("/html/body/div[2]/div[1]/header/div[3]/div/div/div[1]/div/div[1]/div/nav/div[1]/div/div/div/div/div[1]/div/div[1]/div/div[1]/div/nav/div[3]/a")).click();
         try {
@@ -230,8 +232,17 @@ public class TestAutomationVynoteka {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        //Tikriname pavadinima ir kaina
 
-       // _globalDriver.close();
+        String priceActual = _globalDriver.findElement(By.xpath("/html/body/div[1]/div[1]/main/div[2]/div/div/div/div[2]/div/div[3]/div[1]/div[2]/strong")).getText();
+        String priceInChart = _globalDriver.findElement(By.xpath("/html/body/div[1]/div[1]/main/section/div/div[2]/div[2]/div/div/div/div[3]/div/div[2]/div/div[5]/div[2]")).getText();
+        Assert.assertEquals(priceActual, priceInChart);
+
+        String nameInPage = _globalDriver.findElement(By.xpath("/html/body/div[1]/div[1]/main/div[2]/section[1]/div/div/div/div/div/div[2]/div[1]/h3")).getText();
+        String nameInCahrt = _globalDriver.findElement(By.xpath("/html/body/div[1]/div[1]/main/section/div/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div/div[1]/div/div[2]")).getText();
+        Assert.assertEquals(nameInPage, nameInCahrt);
+
+       _globalDriver.close();
     }
 
 
