@@ -130,16 +130,16 @@ public class TestAutomationVynoteka {
 
         //Tikriname, ar atsiranda reklaminis langas, atsisakius ir uzdarius prenumeratos langa//
         // _globalDriver.findElement(By.id("omnisend-form-63ff1f31b40d6530aba59a6d-close-action")).click();
-       // try {
-       //     TimeUnit.SECONDS.sleep(15);
-      //  } catch (InterruptedException e) {
-      //      e.printStackTrace();
-       // }
-       // WebElement advertisementText = _globalDriver.findElement(By.xpath("/html/body/div[2]/div[4]/div/div/div/a/img[1]"));
+        // try {
+        //     TimeUnit.SECONDS.sleep(15);
+        //  } catch (InterruptedException e) {
+        //      e.printStackTrace();
+        // }
+        // WebElement advertisementText = _globalDriver.findElement(By.xpath("/html/body/div[2]/div[4]/div/div/div/a/img[1]"));
 
-       // WebElement closeAdvertisement = _globalDriver.findElement(By.xpath("/html/body/div[2]/div[4]/div/div/div/button"));
-       // closeAdvertisement.click();
-        //Prisijungti prie paskyros//
+        // WebElement closeAdvertisement = _globalDriver.findElement(By.xpath("/html/body/div[2]/div[4]/div/div/div/button"));
+        // closeAdvertisement.click();
+        // Prisijungti prie paskyros//
         _globalDriver.findElement(By.xpath("/html/body/div[2]/div[1]/header/div[2]/div/div/div[4]/nav/div[1]/button")).click();
         try {
             TimeUnit.SECONDS.sleep(5);
@@ -164,26 +164,59 @@ public class TestAutomationVynoteka {
         }
         _globalDriver.findElement(By.xpath("/html/body/div[1]/div[1]/main/section/div/div[2]/div/div[1]/div[4]/div[3]/div/div/div[1]/a/img")).click();
         try {
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         //Idedame i krepseli//
         _globalDriver.findElement(By.xpath("/html/body/div[1]/div[1]/main/div[2]/section[1]/div/div/div/div/div/div[2]/div[2]/div[2]/div[2]/button")).click(); //Ideti i krepseli//
-        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[1]/div[1]/div/div[1]/div")).click(); //Pristatymas i namus//
-        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[1]/div[1]/button/span")).click(); //Toliau pristatymo adresas//
-        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/form/div[1]/div/div[2]/div/div[1]/div/div/input")).sendKeys("Upės g.1,Vilnius"); //Suvedamas adresas//
-        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/form/div[1]/div/div[2]/div/div[2]/button")).click(); //Ieskoti//
         try {
             TimeUnit.SECONDS.sleep(2);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/form/div[1]/div/div[2]/div[5]/button")).click(); //Pasirinkti is duotu adresu//
-        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/form/div[1]/div/button")).click(); //Pasirinkti adresa//
-        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/form/div/button")).click(); //Issaugoti pristatymo adresa//
+        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[1]/div[1]/div/div[1]/div/div")).click(); //Pristatymas i namus//
+        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[1]/div[1]/button/span")).click(); //Toliau pristatymo adresas//
+        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/form/div[1]/div/div[2]/div/div[1]/div/div/input")).sendKeys("Upės g.1, Vilnius"); //Suvedamas adresas//
+        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/form/div[1]/div/div[2]/div/div[2]/button")).click();
         try {
             TimeUnit.SECONDS.sleep(2);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/form/div[1]/div/div[2]/div/div[2]/button")).click(); //Ieskoti//
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/form/div[1]/div/div[2]/div[1]/button")).click(); //Pasirinkti is duotu adresu//
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/form/div[1]/div/button")).click(); //Pasirinkti adresa//
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/form/div[1]/div/button")).click(); //Pasirinkti adresa//
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/form/div/button")).click(); //Issaugoti pristatymo adresa//
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[5]/div/div/div/div[2]/div[2]/div/form/div/button")).click(); //Issaugoti pristatymo adresa//
+        try {
+            TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -195,17 +228,8 @@ public class TestAutomationVynoteka {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        //Pasalinti preke is krepselio//
-        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[1]/main/section/div/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div/div[7]/div/div[2]/button")).click();
-        //Atsijungti nuo paskiros//
-        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[1]/header/div[2]/div/div/div[4]/nav/div[1]/a/span"));
-        _globalDriver.findElement(By.xpath("/html/body/div[1]/div[1]/header/div[2]/div/div/div[4]/nav/div[1]/div/div/div[2]/button")); //Atsijungti//
-        try {
-            TimeUnit.SECONDS.sleep(2);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        _globalDriver.close();
+
+       // _globalDriver.close();
     }
 
 
