@@ -58,7 +58,7 @@ public class TestAutomationVynoteka {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        _globalDriver.findElement(By.xpath("/html/body/div[2]/div[1]/header/div[2]/div/div/div[3]/div/div/div/form/div[1]/button")).click();
+        _globalDriver.findElement(By.xpath("/html/body/div[2]/div[1]/header/div[2]/div/div/div[3]/div/div/div/form/div[1]/button")).click();//Paspausti "Paieška"
         try {
             TimeUnit.SECONDS.sleep(5);
         } catch (InterruptedException e) {
