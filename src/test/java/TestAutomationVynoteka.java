@@ -243,6 +243,7 @@ public class TestAutomationVynoteka {
         Assert.assertEquals(nameInPage, nameInCahrt);
 
        _globalDriver.close();
+
     }
 
 
